@@ -84,45 +84,11 @@
             display: block;
         }
 
-        .container {
-            display: flex;
-            flex: 1;
-        }
-
-        .sidebar {
-            background: #333;
-            color: white;
-            width: 200px;
-            padding: 1em;
-            position: fixed;
-            top: 70px;
-            bottom: 0;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 1em;
-        }
-
-        .sidebar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        .sidebar ul li a:hover {
-            color: #ddd;
-        }
-
         main {
             flex: 1;
-            margin-left: 220px;
             padding: 2em;
             max-width: 1200px;
+            margin: auto;
         }
 
         .intro {
@@ -187,20 +153,13 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Assignments</a></li>
-                <li><a href="#">Exams</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Library</a></li>
-            </ul>
-        </aside>
-        <main>
-       
-        </main>
-    </div>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Computer Study</h2>
+            <p>Your journey into the world of computer science begins here. Whether you're a beginner or looking to advance your skills, you'll find resources and support here to help you succeed.</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Computer Study. All rights reserved.</p>
     </footer>
