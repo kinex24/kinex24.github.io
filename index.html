@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Computer Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .intro {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #4CAF50;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computer Study</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Classes</a>
+                    <div class="dropdown-content">
+                        <a href="#class6">Class 6</a>
+                        <a href="#class7">Class 7</a>
+                        <a href="#class8">Class 8</a>
+                        <a href="#class9">Class 9</a>
+                        <a href="#class10">Class 10</a>
+                        <a href="#class11">Class 11</a>
+                        <a href="#class12">Class 12</a>
+                    </div>
+                </li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Computer Study</h2>
+            <p>Your journey into the world of computer science begins here. Whether you're a beginner or looking to advance your skills, you'll find resources and support here to help you succeed.</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Computer Study. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreBtn = document.getElementById('learnMoreBtn');
+
+            learnMoreBtn.addEventListener('click', function() {
+                alert('Explore more about Computer Study. Stay tuned for updates!');
+            });
+        });
+    </script>
+</body>
+</html>
