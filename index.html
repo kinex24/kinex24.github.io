@@ -11,6 +11,9 @@
             padding: 0;
             background: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -80,7 +83,12 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
         .sidebar {
             background: #333;
             color: white;
@@ -110,11 +118,11 @@
             color: #ddd;
         }
 
-
         main {
+            flex: 1;
+            margin-left: 220px;
             padding: 2em;
             max-width: 1200px;
-            margin: auto;
         }
 
         .intro {
@@ -153,15 +161,12 @@
             color: white;
             text-align: center;
             padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Department of Computer Science </h1>
+        <h1>Computer Study</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -182,22 +187,24 @@
             </ul>
         </nav>
     </header>
-     <aside class="sidebar">
+    <div class="container">
+        <aside class="sidebar">
             <ul>
-                <li><a href="#">Python intro</a></li>
-                <li><a href="#">getting started</a></li>
-                <li><a href="#">how to install it</a></li>
-                <li><a href="#">VSCode</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Assignments</a></li>
+                <li><a href="#">Exams</a></li>
+                <li><a href="#">Results</a></li>
                 <li><a href="#">Library</a></li>
             </ul>
         </aside>
-    <main>
-        <section class="intro">
-            <h2>Welcome to Computer Study</h2>
-            <p>Your journey into the world of computer science begins here. Whether you're a beginner or looking to advance your skills, you'll find resources and support here to help you succeed.</p>
-            <button id="learnMoreBtn">Learn More</button>
-        </section>
-    </main>
+        <main>
+            <section class="intro">
+                <h2>Welcome to Computer Study</h2>
+                <p>Your journey into the world of computer science begins here. Whether you're a beginner or looking to advance your skills, you'll find resources and support here to help you succeed.</p>
+                <button id="learnMoreBtn">Learn More</button>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2024 Computer Study. All rights reserved.</p>
     </footer>
